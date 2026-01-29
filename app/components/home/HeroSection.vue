@@ -1,6 +1,6 @@
 <template>
   <section class="h-[90vh] relative overflow-hidden bg-Dark text-white py-4">
-    <LayoutNavbar />
+    <Navbar />
 
     <div
       class="container mx-auto py-34 flex flex-col space-y-0 items-center md:flex-row md:space-y-4 md:justify-between"
@@ -11,7 +11,7 @@
         >
           Financial Security
           <span class="flex space-x-3">
-            <span> Made </span> <UiWordRotator />
+            <span> Made </span> <WordRotator />
           </span>
         </h1>
 
@@ -22,24 +22,30 @@
           grow your startup business quickly.
         </p>
 
-        <div class="mt-8 flex items-center gap-4">
-          <UiButton
-            class="bg-green-300 text-white hover:bg-LightGrayGreen ont-bold text-md duration-500 animate-all px-5 py-2 md:px-10 md:py-4"
-          >
-            Get Start For Free
-          </UiButton>
+        <div class="flex items-center gap-4 pt-6">
+          <ButtonSlideToTop
+            topText="Get Start For Free"
+            bottomText="Get Start For Free"
+            width="w-72"
+          />
 
-          <UiButton
+          <Button
             class="bg-transparent text-white hover:bg-transparent hover:text-ParisGreen font-bold text-md px-10 py-4 duration-500 animate-all md:px-5 md:py-2"
           >
             Let’s talk →
-          </UiButton>
+          </Button>
         </div>
       </div>
 
-      <UiVideoPlayer />
+      <VideoPlayer />
     </div>
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Navbar from "../layout/Navbar.vue";
+import Button from "../ui/btn/Button.vue";
+import ButtonSlideToTop from "../ui/btn/ButtonSlideToTop.vue";
+import VideoPlayer from "../ui/VideoPlayer.vue";
+import WordRotator from "../ui/WordRotator.vue";
+</script>
