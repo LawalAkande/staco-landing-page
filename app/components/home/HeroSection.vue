@@ -24,7 +24,7 @@
           grow your startup business quickly.
         </p>
 
-        <div class="flex flex-col items-center gap-4 pt-6">
+        <div class="flex flex-col items-center gap-4 pt-6 md:flex-row">
           <ButtonSlideToTop
             topText="Get Start For Free"
             bottomText="Get Start For Free"
