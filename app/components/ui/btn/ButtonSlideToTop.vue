@@ -1,6 +1,6 @@
 <template>
   <button
-    class="group bg-LightGrayGreen hover:bg-ParisGreen relative cursor-pointer overflow-hidden rounded-full px-4 py-8 transition-all duration-300 ease-in-out"
+    class="group bg-LightGrayGreen hover:bg-ParisGreen relative cursor-pointer overflow-hidden rounded-full px-4 py-7 transition-all duration-300 ease-in-out"
     :class="[widthClass, colorClass]"
   >
     <span
@@ -25,8 +25,6 @@ const props = defineProps<{
   colorClass?: string;
 }>();
 
-const widthClass = computed(() => props.width ?? "w-40");
-const colorClass = computed(
-  () => props.colorClass ?? "border-green-400 text-green-400",
-);
+const widthClass = computed(() => props.width ?? "");
+const colorClass = computed(() => props.colorClass ?? "");
 </script>

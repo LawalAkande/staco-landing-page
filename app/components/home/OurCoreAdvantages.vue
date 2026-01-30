@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto grid gap-10 md:grid-cols-3 py-4 md:py-24">
+  <section class="container mx-auto grid gap-10 md:grid-cols-3 py-4 md:py-24 px-4 md:px-0">
     <CoreAdvantage
       v-for="(advantage, index) in advantages"
       :key="index"

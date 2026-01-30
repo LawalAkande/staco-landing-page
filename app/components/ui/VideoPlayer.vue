@@ -1,5 +1,5 @@
 <template>
-  <div class="relative rounded-3xl bg-red-200 max-w-112.5">
+  <div class="relative rounded-3xl bg-red-200 max-w-112.5 mt-10 md:mt-0">
     <video ref="videoRef" autoplay class="rounded-3xl w-full h-84 object-cover">
       <source :src="HeroVideo" type="video/mp4" />
     </video>

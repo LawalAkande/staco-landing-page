@@ -1,13 +1,15 @@
 <template>
-  <section class="h-[90vh] relative overflow-hidden bg-Dark text-white py-4">
+  <section
+    class="relative overflow-hidden bg-Dark text-white px-4 py-4 md:px-0 md:h-[90vh]"
+  >
     <Navbar />
 
     <div
-      class="container mx-auto py-34 flex flex-col space-y-0 items-center md:flex-row md:space-y-4 md:justify-between"
+      class="container mx-auto py-6 flex flex-col space-y-0 items-center md:flex-row md:space-y-4 md:justify-between md:py-34"
     >
       <div class="space-y-4 md:space-y-8">
         <h1
-          class="font-plus-jakarta font-bold text-4xl text-white tracking-wide leading-16 md:leading-22 md:text-[60px]"
+          class="font-plus-jakarta font-bold text-4xl text-white tracking-wide leading-12 md:leading-22 md:text-[60px]"
         >
           Financial Security
           <span class="flex space-x-3">
@@ -16,13 +18,13 @@
         </h1>
 
         <p
-          class="font-semibold text-[18px] heading-[3rem] leading-8 md:max-w-148"
+          class="font-semibold text-[18px] md:heading-[3rem] md:leading-8 md:max-w-148"
         >
           Staco is the dedicated platform for human management that helps to
           grow your startup business quickly.
         </p>
 
-        <div class="flex items-center gap-4 pt-6">
+        <div class="flex flex-col items-center gap-4 pt-6">
           <ButtonSlideToTop
             topText="Get Start For Free"
             bottomText="Get Start For Free"

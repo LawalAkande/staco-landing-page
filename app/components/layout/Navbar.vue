@@ -14,11 +14,11 @@
           Sign in
         </Button>
 
-        <ButtonSlideToTop topText="Start Free" bottomText="Start Free" />
+        <ButtonSlideToTop topText="Start Free" bottomText="Start Free" width="w-40"/>
       </div>
 
       <div class="lg:hidden">
-        <MenuIcon />
+        <img :src="MenuIcon" alt="mobile menu icon">
       </div>
     </div>
   </section>
@@ -26,11 +26,7 @@
 
 <script setup lang="ts">
 import Button from "../ui/btn/Button.vue";
-import MenuIcon from "../../components/icons/MenuIcon.vue";
+import MenuIcon from "../../assets/svgs/menu-icon.svg";
 import StacoLogo from "../../assets/svgs/staco-logo.svg";
 import ButtonSlideToTop from "../ui/btn/ButtonSlideToTop.vue";
-
-const handleClick = () => {
-  console.log("Button clicked");
-};
 </script>
